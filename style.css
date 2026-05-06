@@ -134,21 +134,12 @@ nav a:hover { color: var(--primary-color); }
 
 .btn-secondary:hover { background: rgba(255,255,255,0.05); }
 
-<<<<<<< HEAD
 /* 4. About Section */
 #about { 
     padding: 100px 0; 
 }
 
 .about-content {
-=======
-/* 4. Seção Sobre */
-#sobre { 
-    padding: 100px 0; 
-}
-
-.sobre-content {
->>>>>>> 1cbd5268105117a16beecbd74cd812b1bcd560ae
     background: linear-gradient(135deg, var(--primary-dim) 0%, rgba(129, 140, 248, 0.05) 100%);
     padding: 50px;
     border-radius: 20px;
@@ -156,25 +147,15 @@ nav a:hover { color: var(--primary-color); }
     backdrop-filter: blur(5px);
 }
 
-<<<<<<< HEAD
 .about-text h2 { margin-bottom: 30px; }
 
 .about-text p {
-=======
-.sobre-texto h2 { margin-bottom: 30px; }
-
-.sobre-texto p {
->>>>>>> 1cbd5268105117a16beecbd74cd812b1bcd560ae
     margin-bottom: 1.5rem;
     color: var(--text-muted);
     font-size: 1.1rem;
 }
 
-<<<<<<< HEAD
 .about-text p strong {
-=======
-.sobre-texto p strong {
->>>>>>> 1cbd5268105117a16beecbd74cd812b1bcd560ae
     color: var(--primary-color);
     font-weight: 600;
 }
@@ -202,11 +183,7 @@ nav a:hover { color: var(--primary-color); }
     border-color: var(--primary-color) !important;
 }
 
-<<<<<<< HEAD
 /* 5. Section Titles */
-=======
-/* 5. Títulos de Seção */
->>>>>>> 1cbd5268105117a16beecbd74cd812b1bcd560ae
 h2 {
     margin-bottom: 60px;
     font-size: 2.2rem;
@@ -224,21 +201,12 @@ h2::after {
     background: var(--primary-color);
 }
 
-<<<<<<< HEAD
 /* 6. Projects Grid */
 #projects { 
     padding: 100px 0 60px; 
 }
 
 .project-grid {
-=======
-/* 6. Grid de Projetos */
-#projetos { 
-    padding: 100px 0 60px; 
-}
-
-.grid-projetos {
->>>>>>> 1cbd5268105117a16beecbd74cd812b1bcd560ae
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
@@ -272,11 +240,7 @@ h2::after {
     text-transform: uppercase;
 }
 
-<<<<<<< HEAD
 /* 7. GitHub CTA */
-=======
-/* 7. CTA GitHub */
->>>>>>> 1cbd5268105117a16beecbd74cd812b1bcd560ae
 .github-cta {
     margin: 40px auto;
     max-width: 800px;
@@ -362,30 +326,17 @@ footer a:hover { color: white; }
         margin-bottom: 30px;
     }
 
-<<<<<<< HEAD
     /* Scale adjustment for project cards on mobile */
-=======
-    /* Ajuste de escala para os cards de projetos no mobile */
->>>>>>> 1cbd5268105117a16beecbd74cd812b1bcd560ae
     .card {
         padding: 25px 20px;
     }
 
-<<<<<<< HEAD
     /* Scale adjustment for the about section on mobile */
     .about-content { 
         padding: 25px 20px; 
     }
 
     .about-text p {
-=======
-    /* Ajuste de escala para a seção sobre no mobile */
-    .sobre-content { 
-        padding: 25px 20px; 
-    }
-
-    .sobre-texto p {
->>>>>>> 1cbd5268105117a16beecbd74cd812b1bcd560ae
         font-size: 0.95rem;
     }
 
