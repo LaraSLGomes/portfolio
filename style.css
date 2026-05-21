@@ -1,17 +1,14 @@
 :root {
-   
     --bg-color: #f3f0e9;       
-    --card-bg: #ffffff;       
-    
+    --card-bg: #ffffff;        
     --primary-color: #22c55e;   
     --primary-dim: #f0fdf4;     
     --text-main: #1a1a1a;       
     --text-muted: #525252;     
-    --accent: #09c48c;       
-    
+    --accent: #ca8a04;          
     --font-title: 'Space Grotesk', 'Impact', sans-serif; 
     --font-main: 'Inter', sans-serif;
-    --font-code: 'Courier New', Courier, monospace;    
+    --font-code: 'Courier New', Courier, monospace;     
     --container-width: 1000px;
 }
 
@@ -109,7 +106,7 @@ nav a:hover {
 }
 
 #hero span {
-    background-color: #32b890; 
+    background-color: #05bd76; 
     padding: 0 15px;
     display: inline-block;
     transform: rotate(1deg);
@@ -220,7 +217,7 @@ nav a:hover {
 }
 
 .badge-highlight {
-    background: #f43f5e !important;
+    background: #f43f5e !important; 
     color: white !important;
 }
 
@@ -250,7 +247,7 @@ h2 {
 
 .card {
     background: var(--card-bg);
-    padding: 30px;
+    padding: 40px;
     border: 2px solid #1a1a1a;
     box-shadow: 6px 6px 0px #1a1a1a;
     display: flex;
@@ -330,30 +327,114 @@ footer a {
 }
 
 @media (max-width: 768px) {
-    header { margin: 10px; }
-    
-    #hero h1 { 
-        font-size: 2.8rem; 
+    header { 
+        margin: 10px; 
+        max-width: calc(100% - 20px);
+        top: 10px;
     }
     
-    .card, .about-content, h2, .btn-primary, .btn-secondary {
-        transform: rotate(0deg) !important;
+    #hero {
+        padding: 60px 0 40px;
+    }
+
+    #hero h1 { 
+        font-size: 2.4rem; 
+        line-height: 1.1;
+    }
+
+    #hero p {
+        font-size: 0.95rem;
+        padding: 0 5px;
+        margin-bottom: 25px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        padding: 0 15px;
+        gap: 12px;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+        padding: 12px 20px;
+        font-size: 0.95rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 35px;
+        padding: 4px 10px;
+    }
+
+    #about {
+        padding: 40px 0;
+    }
+
+    .about-content { 
+        padding: 25px 15px; 
+        margin: 0 5px;
+        box-shadow: 4px 4px 0px #1a1a1a;
+    }
+
+    .about-content::before {
+        width: 80px;
+        left: 38%;
+        height: 20px;
+        top: -10px;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .badges {
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .badge {
+        font-size: 0.75rem;
+        padding: 4px 10px;
+    }
+
+    #projects {
+        padding: 40px 0;
     }
 
     .project-grid {
         gap: 25px;
+        padding: 0 5px;
     }
 
     .card {
         padding: 25px 20px;
-    }
-
-    .about-content { 
-        padding: 30px 20px; 
+        box-shadow: 4px 4px 0px #1a1a1a;
     }
 
     .github-cta { 
-        margin: 30px 15px; 
-        padding: 25px; 
+        margin: 40px 15px; 
+        padding: 25px 15px; 
+        box-shadow: 4px 4px 0px #1a1a1a;
+    }
+
+    .github-cta p {
+        font-size: 0.9rem;
+    }
+
+    .btn-github {
+        width: 100%;
+        max-width: 260px;
+        justify-content: center;
+    }
+
+    .card, .about-content, h2, .btn-primary, .btn-secondary, .github-cta {
+        transform: rotate(0deg) !important;
+    }
+
+    nav ul { 
+        display: none; 
     }
 }
