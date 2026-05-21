@@ -1,16 +1,17 @@
 :root {
-    --bg-color: #0b0f1a;
-    --card-bg: #161e2d;
+   
+    --bg-color: #f3f0e9;       
+    --card-bg: #ffffff;       
     
-    --primary-color: #4ade80;   
-    --primary-glow: rgba(74, 222, 128, 0.2);
-    --primary-dim: rgba(74, 222, 128, 0.05);
+    --primary-color: #22c55e;   
+    --primary-dim: #f0fdf4;     
+    --text-main: #1a1a1a;       
+    --text-muted: #525252;     
+    --accent: #09c48c;       
     
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --accent: #818cf8; 
+    --font-title: 'Space Grotesk', 'Impact', sans-serif; 
     --font-main: 'Inter', sans-serif;
-    --font-code: 'JetBrains Mono', monospace;
+    --font-code: 'Courier New', Courier, monospace;    
     --container-width: 1000px;
 }
 
@@ -21,12 +22,16 @@
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: inherit;
 }
 
 body {
     background-color: var(--bg-color);
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
     color: var(--text-main);
     font-family: var(--font-main);
     line-height: 1.6;
@@ -39,31 +44,39 @@ body {
     padding: 0 20px;
 }
 
-/* 2. Cabeçalho */
 header {
-    padding: 1.5rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    background: rgba(11, 15, 26, 0.8);
-    backdrop-filter: blur(10px);
+    padding: 1.2rem 0;
+    background: #ffffff;
+    border: 2px solid #1a1a1a;
+    box-shadow: 4px 4px 0px #1a1a1a;
     position: sticky;
-    top: 0;
+    top: 15px;
     z-index: 100;
+    margin: 15px auto;
+    max-width: calc(var(--container-width) - 40px);
+    border-radius: 4px;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 .logo {
     font-family: var(--font-code);
     font-size: 1.4rem;
     font-weight: bold;
-    letter-spacing: -1px;
 }
 
-.logo span { color: var(--primary-color); }
+.logo span { 
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2px 6px;
+    transform: rotate(-2deg);
+    display: inline-block;
+}
 
 nav ul {
     display: flex;
@@ -72,36 +85,43 @@ nav ul {
 }
 
 nav a {
-    color: var(--text-muted);
+    color: var(--text-main);
     font-size: 0.95rem;
-    transition: 0.3s;
+    font-weight: bold;
 }
 
-nav a:hover { color: var(--primary-color); }
+nav a:hover { 
+    text-decoration: underline !important;
+}
 
-/* 3. Hero Section */
 #hero {
-    padding: 120px 0 80px;
+    padding: 100px 0 60px;
     text-align: center;
 }
 
 #hero h1 {
-    font-size: 4rem;
-    line-height: 1.1;
+    font-family: var(--font-title);
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    line-height: 1;
     margin-bottom: 24px;
-    font-weight: 800;
 }
 
 #hero span {
-    color: var(--primary-color);
-    text-shadow: 0 0 20px var(--primary-glow);
+    background-color: #32b890; 
+    padding: 0 15px;
+    display: inline-block;
+    transform: rotate(1deg);
+    box-shadow: 3px 3px 0px #1a1a1a;
 }
 
 #hero p {
     color: var(--text-muted);
     max-width: 650px;
-    margin: 0 auto 35px;
+    margin: 20px auto 35px;
     font-size: 1.2rem;
+    font-family: var(--font-code); 
 }
 
 .cta-buttons {
@@ -111,233 +131,225 @@ nav a:hover { color: var(--primary-color); }
 }
 
 .btn-primary, .btn-secondary {
-    padding: 14px 28px;
-    border-radius: 10px;
-    font-weight: 600;
-    transition: all 0.3s ease;
+    padding: 12px 24px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    border: 2px solid #1a1a1a;
 }
 
 .btn-primary {
     background-color: var(--primary-color);
-    color: #062012;
+    color: white;
+    box-shadow: 4px 4px 0px #1a1a1a;
+    transform: rotate(-1deg);
 }
 
 .btn-primary:hover { 
-    transform: translateY(-3px); 
-    box-shadow: 0 10px 20px var(--primary-glow);
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #1a1a1a;
 }
 
 .btn-secondary {
-    border: 1px solid rgba(255,255,255,0.1);
+    background: #ffffff;
     color: var(--text-main);
+    box-shadow: 4px 4px 0px #1a1a1a;
+    transform: rotate(1deg);
 }
 
-.btn-secondary:hover { background: rgba(255,255,255,0.05); }
+.btn-secondary:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #1a1a1a;
+}
 
-/* 4. About Section */
 #about { 
-    padding: 100px 0; 
+    padding: 80px 0; 
 }
 
 .about-content {
-    background: linear-gradient(135deg, var(--primary-dim) 0%, rgba(129, 140, 248, 0.05) 100%);
-    padding: 50px;
-    border-radius: 20px;
-    border: 1px dashed rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
+    background: #a7f3d0; 
+    padding: 40px;
+    border: 2px solid #1a1a1a;
+    box-shadow: 8px 8px 0px #1a1a1a;
+    transform: rotate(-0.5deg);
+    position: relative;
+}
+
+.about-content::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 42%;
+    width: 120px;
+    height: 30px;
+    background: rgba(250, 240, 210, 0.6);
+    border-left: 1px dashed rgba(0,0,0,0.1);
+    border-right: 1px dashed rgba(0,0,0,0.1);
+    transform: rotate(-2deg);
 }
 
 .about-text h2 { margin-bottom: 30px; }
 
 .about-text p {
     margin-bottom: 1.5rem;
-    color: var(--text-muted);
+    color: #1a1a1a;
     font-size: 1.1rem;
 }
 
 .about-text p strong {
-    color: var(--primary-color);
-    font-weight: 600;
+    background-color: #6ee7b7; 
+    padding: 2px 6px;
 }
 
 .badges {
     display: flex;
-    gap: 12px;
+    gap: 10px;
     flex-wrap: wrap;
     margin-top: 25px;
 }
 
 .badge {
-    background: rgba(129, 140, 248, 0.1);
-    color: var(--accent);
-    padding: 6px 16px;
-    border-radius: 50px;
+    background: #ffffff;
+    color: #1a1a1a;
+    padding: 6px 14px;
     font-size: 0.85rem;
     font-family: var(--font-code);
-    border: 1px solid rgba(129, 140, 248, 0.2);
+    border: 2px solid #1a1a1a;
+    font-weight: bold;
+    box-shadow: 2px 2px 0px #1a1a1a;
 }
 
 .badge-highlight {
-    background: var(--primary-dim) !important;
-    color: var(--primary-color) !important;
-    border-color: var(--primary-color) !important;
+    background: #f43f5e !important;
+    color: white !important;
 }
 
-/* 5. Section Titles */
 h2 {
-    margin-bottom: 60px;
+    font-family: var(--font-title);
     font-size: 2.2rem;
-    position: relative;
+    text-transform: uppercase;
+    background: #1a1a1a;
+    color: #ffffff;
+    padding: 5px 15px;
     display: inline-block;
+    margin-bottom: 50px;
+    transform: rotate(-1deg);
+    box-shadow: 4px 4px 0px var(--primary-color);
 }
 
-h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 40px;
-    height: 4px;
-    background: var(--primary-color);
-}
-
-/* 6. Projects Grid */
 #projects { 
-    padding: 100px 0 60px; 
+    padding: 80px 0; 
 }
 
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    gap: 40px;
     align-items: stretch;
 }
 
 .card {
     background: var(--card-bg);
-    padding: 40px;
-    border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.03);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    padding: 30px;
+    border: 2px solid #1a1a1a;
+    box-shadow: 6px 6px 0px #1a1a1a;
     display: flex;
     flex-direction: column;
+    transition: transform 0.2s ease;
 }
 
+.card:nth-child(odd) { transform: rotate(-1deg); }
+.card:nth-child(even) { transform: rotate(1.5deg); }
+
 .card:hover {
-    border-color: var(--primary-color);
-    transform: translateY(-10px);
-    background: rgba(30, 41, 59, 0.8);
+    transform: scale(1.02) rotate(0deg) !important;
+    box-shadow: 10px 10px 0px var(--primary-color);
 }
 
 .tag {
-    background: rgba(255, 255, 255, 0.05);
+    background: #f3f4f6;
     padding: 4px 10px;
-    border-radius: 6px;
     font-size: 0.75rem;
-    color: var(--primary-color);
-    border: 1px solid var(--primary-glow);
+    color: #1a1a1a;
+    border: 2px solid #1a1a1a;
     font-family: var(--font-code);
-    text-transform: uppercase;
+    font-weight: bold;
 }
 
-/* 7. GitHub CTA */
 .github-cta {
-    margin: 40px auto;
+    margin: 60px auto;
     max-width: 800px;
     text-align: center;
-    padding: 30px;
-    background: linear-gradient(135deg, var(--primary-dim) 0%, rgba(129, 140, 248, 0.05) 100%);
-    border-radius: 16px;
-    border: 1px dashed rgba(255, 255, 255, 0.1);
+    padding: 35px;
+    background: #ffffff;
+    border: 2px solid #1a1a1a;
+    box-shadow: 6px 6px 0px #1a1a1a;
+    transform: rotate(0.5deg);
 }
 
 .github-cta p {
-    color: var(--text-muted);
-    font-size: 1rem;
+    font-family: var(--font-code);
+    font-size: 1.05rem;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .btn-github {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background-color: #24292e;
+    background-color: #1a1a1a;
     color: white;
     padding: 12px 24px;
-    border-radius: 8px;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 0.95rem;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid #1a1a1a;
+    box-shadow: 4px 4px 0px var(--primary-color);
+    transition: 0.2s;
 }
 
 .btn-github:hover {
-    background-color: #333;
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px var(--primary-glow);
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px var(--primary-color);
 }
 
-/* 8. Footer */
 footer {
-    padding: 60px 0;
+    padding: 50px 0;
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    font-size: 0.9rem;
-    color: var(--text-muted);
+    border-top: 2px solid #1a1a1a;
+    font-size: 0.95rem;
+    font-weight: bold;
+    background: #ffffff;
+    margin-top: 40px;
 }
 
 footer a {
-    color: var(--primary-color);
-    font-weight: 600;
-    margin: 0 5px;
-    transition: 0.3s;
+    background-color: #06b6d4;
+    padding: 2px 6px;
+    border: 1px solid #1a1a1a;
 }
 
-footer a:hover { color: white; }
-
-/* modificando pra deixar um visual melhor para a versao mobile */
 @media (max-width: 768px) {
+    header { margin: 10px; }
+    
     #hero h1 { 
-        font-size: 2.2rem; 
-        line-height: 1.2;
+        font-size: 2.8rem; 
     }
     
-    #hero p {
-        font-size: 1rem;
-        padding: 0 10px;
+    .card, .about-content, h2, .btn-primary, .btn-secondary {
+        transform: rotate(0deg) !important;
     }
 
-    nav ul { display: none; }
-
-    .cta-buttons { 
-        flex-direction: column; 
-        padding: 0 20px;
+    .project-grid {
+        gap: 25px;
     }
 
-    .btn-primary, .btn-secondary {
-        width: 100%;
-        max-width: 280px;
-        margin: 0 auto;
-        padding: 12px 20px;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-        margin-bottom: 30px;
-    }
-
-    /* Scale adjustment for project cards on mobile */
     .card {
         padding: 25px 20px;
     }
 
-    /* Scale adjustment for the about section on mobile */
     .about-content { 
-        padding: 25px 20px; 
-    }
-
-    .about-text p {
-        font-size: 0.95rem;
+        padding: 30px 20px; 
     }
 
     .github-cta { 
