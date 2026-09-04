@@ -3,131 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lara Stephanny | Dev </title>
+    <title>Lara Stephanny | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <nav class="container">
-            <div class="logo">LS</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="hero" class="container">
-            <h1>Developer & <br><span>Researcher</span></h1>
-            <p>Computer Science student focused on building efficient, innovative projects that create real impact.</p>
-            <div class="cta-buttons">
-                <a href="#projects" class="btn-primary">View Projects</a>
-                <a href="resume.pdf" class="btn-secondary" target="_blank">Resume</a>
-            </div>
-        </section>
-
-        <section id="about" class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <p>
-                        My interest in technology started from a natural curiosity to understand how the digital world is built. Today, as a Computer Science student, I turn that passion into solutions designed to create real impact.
+    <div class="book-container">
+        <div class="book">
+            
+            <!-- LADO ESQUERDO FIXO (Seu Perfil) -->
+            <div class="page-left">
+                <div class="profile-section">
+                    <img src="https://via.placeholder.com/150" alt="Lara Stephanny" class="profile-img">
+                    <h1>Lara Stephanny</h1>
+                    <h3>Full Stack Dev & Researcher</h3>
+                    
+                    <p class="bio">
+                        Computer Science student building scalable web solutions and Generative AI tools. I engineer code that delivers tangible social and economic value.
                     </p>
-                    <p>
-                        I'm a research enthusiast and currently apply this foundation at PET-SAÚDE Digital. This program integrates education, healthcare services, and the community, focusing on accelerating the digital transformation of SUS. In the project, I work directly on modernizing processes and tools for public health, combining computing with better care outcomes.
-                    </p>
-                    <p>
-                        Driven by challenges and naturally take on leadership roles in teams. I believe technology reaches its full potential when paired with dedicated execution and a clear purpose.
-                    </p>
-                    <div class="badges">
-                        <span class="badge">Innovation</span>
-                        <span class="badge">Leadership</span>
-                        <span class="badge">Full Stack Development</span>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/lara-stephanny-0317a82b5/" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/LaraSLGomes" target="_blank">GitHub</a>
+                    </div>
+                    
+                    <div class="buttons">
+                        <a href="resume.pdf" target="_blank" class="btn">Download CV</a>
                     </div>
                 </div>
             </div>
-        </section>
 
-         <section id="projects" class="container">
-            <h2>Featured Projects</h2>
-            <div class="project-grid">
+            <!-- LADO DIREITO (Páginas que viram) -->
+            
+            <!-- PÁGINA 1 (Fica por cima) -->
+            <div class="page-right" id="page1" style="z-index: 2;">
                 
-               <article class="card">
-                <div class="card-header">
-                  <h3>Pricing System — NAF</h3>
-                     <span class="tag-category">Backend & DB</span>
-            </div>
-            <p>
-              Leader of the project. Developed the backend architecture and database model for a platform built in partnership with the university's <strong>Accounting and Tax Support Center (NAF)</strong> to support local microentrepreneurs.
-            </p>
-                 <p class="project-details">
-              Engineered a scalable RESTful API with a multi-role authentication structure (Entrepreneurs and Admins). Responsible for implementing complex server-side business logic, including automated unit conversions for inventory, pricing algorithms based on operating costs, and secure data aggregation for management dashboards.
-                 </p>
-                <div class="tags">
-                      <span class="tag">Node.js</span>
-                      <span class="tag">Express</span>
-                     <span class="tag">MongoDB</span>
-              </div>
-            </article>
-
-                <article class="card">
-                    <div class="card-header">
-                         <h3>Delivery Interface System</h3>
-                        <span class="tag-category">Frontend</span>
-                    </div>
-                      <p>
-                     Engineered the responsive frontend architecture for a comprehensive food delivery platform designed to simulate real-world workflows from vendor registration to order tracking.
-                </p>
-                     <p class="project-details">
-                       Architected the user interface layer focusing on seamless client-side   state management for dynamic shopping carts and complex form validations. Implemented asynchronous data fetching for real-time status management throughout the delivery lifecycle, ensuring a highly intuitive and adaptive UX across mobile and desktop viewports.
-                        </p>
-                         <div class="tags">
-                      <span class="tag">React</span>
-                         <span class="tag">Tailwind CSS</span>
-                 </div>
-                    </article>
-
-                <article class="card">
-                    <div class="card-header">
-                        <h3>GamerBoxd — Review Microservice</h3>
-                        <span class="tag-category">Backend</span>
-                    </div>
-                    <p>
-                        A social platform for gaming enthusiasts inspired by Letterboxd. This is the Review Microservice, built with Node.js and Express, responsible for user ratings and reviews.
+                <!-- Frente: About Me -->
+                <div class="page-front">
+                    <h2>About Me</h2>
+                    <p class="text-block">
+                        My technical foundation is built on delivering high-performance backend systems and accessible frontend interfaces. Specializing in Java, Node.js, and Generative AI (RAG), I architect solutions that solve complex problems.
                     </p>
-                    <p class="project-details">
-                        My focus was on the <strong>connectivity layer, database resilience, and cloud deployment readiness</strong>. I implemented Sequelize ORM for PostgreSQL, automated schema synchronization, resilient database configurations with SSL support, and a dedicated health endpoint for CI/CD pipelines. Deployed on <strong>Railway</strong> as a cloud-agnostic microservice.
+                    <p class="text-block">
+                        Currently, I optimize the Moodle platform as a Dev Intern at UNIFOR and engineer health-tech tools at PET-Saúde Digital to accelerate the digital transformation of SUS.
                     </p>
-                    <div class="tags">
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Express</span>
-                        <span class="tag">PostgreSQL</span>
+                    <p class="text-block">
+                        As the 2026 Google Student Ambassador, I ensure that every project I touch aligns technical precision with social goals.
+                    </p>
+                    <div class="page-footer">
+                        <span>1</span>
+                        <button class="next-btn" onclick="turnPage('page1')">❯</button>
                     </div>
-                </article>
+                </div>
 
+                <!-- Verso: Experience -->
+                <div class="page-back">
+                    <h2>Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="date">2026 - Present</span>
+                            <h4>Google Student Ambassador</h4>
+                            <p>Representing Google by promoting technological culture and innovation best practices.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="date">Apr 2026 - Present</span>
+                            <h4>Dev Intern (EAD) | UNIFOR</h4>
+                            <p>Maintenance and evolution of the Moodle platform prioritizing intuitive design.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="date">Aug 2025 - Present</span>
+                            <h4>Scholar | PET-Saúde Digital</h4>
+                            <p>Developing technological solutions for the Brazilian Unified Health System (SUS).</p>
+                        </div>
+                    </div>
+                    <div class="page-footer">
+                        <button class="prev-btn" onclick="turnPageBack('page1')">❮</button>
+                        <span>2</span>
+                    </div>
+                </div>
             </div>
-        </section>
 
-        <div class="github-cta">
-            <p>Interested? Explore these and other projects on my GitHub.</p>
-            <a href="https://github.com/LaraSLGomes" target="_blank" class="btn-github">
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M511.6 76.3C264.8 76.2 64.8 276.1 64.7 522.9c0 197.4 128 364.8 305.5 423.9 22.3 4.1 30.5-9.7 30.5-21.5 0-10.6-.4-38.6-.6-75.7-124.4 27-150.6-60-150.6-60-20.3-51.6-49.6-65.3-49.6-65.3-40.6-27.7 3.1-27.2 3.1-27.2 44.9 3.2 68.6 46.1 68.6 46.1 39.9 68.3 104.7 48.5 130.2 37.1 4-28.9 15.6-48.5 28.4-59.7-99.3-11.3-203.7-49.6-203.7-220.9 0-48.8 17.4-88.7 46-119.9-4.6-11.3-20-56.7 4.4-118.2 0 0 37.5-12 123 45.9 35.7-9.9 74-14.9 112-15.1 37.9.2 76.2 5.1 112 15.1 85.3-57.9 122.8-45.9 122.8-45.9 24.4 61.5 9 106.9 4.4 118.2 28.6 31.2 46 71.1 46 119.9 0 171.8-104.5 209.4-204.2 220.6 16.1 13.8 30.4 41.2 30.4 82.9 0 59.9-.5 108.1-.5 122.8 0 11.9 8.1 25.8 30.8 21.4 177.3-59.2 305.2-226.4 305.1-423.7 0-246.8-200-446.8-446.8-446.8z"></path></svg>
-                View Projects on GitHub
-            </a>
-        </div>
-    </main>
+            <!-- PÁGINA 2 (Fica por baixo da Página 1) -->
+            <div class="page-right" id="page2" style="z-index: 1;">
+                
+                <!-- Frente: Projects -->
+                <div class="page-front">
+                    <h2>Featured Projects</h2>
+                    <div class="project-item">
+                        <h4>NAF-IA: Gen AI Assistant</h4>
+                        <p>Virtual assistant with RAG architecture for immediate triage of taxpayers. Highly scalable and compliant with LGPD.</p>
+                        <span class="tag">Python</span> <span class="tag">RAG</span>
+                    </div>
+                    <div class="project-item">
+                        <h4>Pricing System — NAF</h4>
+                        <p>Web platform automating retail price calculations for microentrepreneurs. Approved for real-world operational use.</p>
+                        <span class="tag">Node.js</span> <span class="tag">MongoDB</span>
+                    </div>
+                    <div class="page-footer">
+                        <span>3</span>
+                        <button class="next-btn" onclick="turnPage('page2')">❯</button>
+                    </div>
+                </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; Lara Stephanny. Built with HTML, CSS and JS.</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/lara-stephanny-0317a82b5/">LinkedIn</a>
+                <!-- Verso: Skills & Awards -->
+                <div class="page-back">
+                    <h2>Skills & Awards</h2>
+                    <div class="skills-section">
+                        <h4>Technical Skills</h4>
+                        <p><strong>Languages:</strong> Java, JavaScript, Node.js, Python, C/C++</p>
+                        <p><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB</p>
+                        <p><strong>Tools:</strong> Generative AI, Git/GitHub, Godot, Scrum</p>
+                    </div>
+                    <div class="skills-section" style="margin-top: 20px;">
+                        <h4>Honors & Awards</h4>
+                        <ul class="awards-list">
+                            <li>Harvard Model United Nations 2023</li>
+                            <li>Santander Coders 2024: Back-End</li>
+                            <li>Ceará Científico 2022: Honorable Mention</li>
+                            <li>1st Place Oratory Contest: AHO</li>
+                        </ul>
+                    </div>
+                    <div class="page-footer">
+                        <button class="prev-btn" onclick="turnPageBack('page2')">❮</button>
+                        <span>4</span>
+                    </div>
+                </div>
             </div>
+
         </div>
-    </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
