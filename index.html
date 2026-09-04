@@ -15,12 +15,13 @@
             <!-- LADO ESQUERDO FIXO (Seu Perfil) -->
             <div class="page-left">
                 <div class="profile-section">
-                    <img src="https://via.placeholder.com/150" alt="Lara Stephanny" class="profile-img">
+                    <!-- Substitua o src pela sua foto real -->
+                    <img src="placeholder.jpg" alt="Lara Stephanny" class="profile-img">
                     <h1>Lara Stephanny</h1>
                     <h3>Full Stack Dev & Researcher</h3>
                     
                     <p class="bio">
-                        Computer Science student building scalable web solutions and Generative AI tools. I engineer code that delivers tangible social and economic value.
+                        Full Stack Developer and Researcher with a proven track record of building scalable web solutions and conducting high-impact projects. 
                     </p>
                     
                     <div class="social-icons">
@@ -29,104 +30,88 @@
                     </div>
                     
                     <div class="buttons">
-                        <a href="resume.pdf" target="_blank" class="btn">Download CV</a>
+                        <a href="resume.pdf" target="_blank" class="btn">Resume</a>
                     </div>
                 </div>
             </div>
 
-            <!-- LADO DIREITO (Páginas que viram) -->
-            
-            <!-- PÁGINA 1 (Fica por cima) -->
-            <div class="page-right" id="page1" style="z-index: 2;">
+            <!-- LADO DIREITO (Onde o JS vai injetar as páginas que viram) -->
+            <div id="pages" aria-live="polite"></div>
+
+            <!-- O CONTEÚDO BRUTO (Fica oculto e o JS vai ler para montar o livro) -->
+            <div id="content-source" style="display: none;">
                 
-                <!-- Frente: About Me -->
-                <div class="page-front">
+                <!-- PÁGINA 1: Frente (About) -->
+                <div class="page-data">
                     <h2>About Me</h2>
+                    <p class="text-block"> Passionate about bridging the gap between technical execution and project strategy. While my foundation is rooted in fullstack development, my ultimate goal is to design scalable solutions and guide products from conception to delivery.
+</p>
+                    <p class="text-block"> Currently, I optimize the Moodle ecosystem as a Dev Intern at UNIFOR's Distance Education department, and I engineer health-tech tools at PET-Saúde Digital to accelerate the digital transformation of the Brazilian public health system (SUS).
+</p>
                     <p class="text-block">
-                        My technical foundation is built on delivering high-performance backend systems and accessible frontend interfaces. Specializing in Java, Node.js, and Generative AI (RAG), I architect solutions that solve complex problems.
-                    </p>
-                    <p class="text-block">
-                        Currently, I optimize the Moodle platform as a Dev Intern at UNIFOR and engineer health-tech tools at PET-Saúde Digital to accelerate the digital transformation of SUS.
-                    </p>
-                    <p class="text-block">
-                        As the 2026 Google Student Ambassador, I ensure that every project I touch aligns technical precision with social goals.
-                    </p>
-                    <div class="page-footer">
-                        <span>1</span>
-                        <button class="next-btn" onclick="turnPage('page1')">❯</button>
-                    </div>
+    Beyond writing code, my role as a 2026 Google Student Ambassador allows me to connect with the community, aligning technical excellence with initiatives that truly matter.
+</p>
                 </div>
 
-                <!-- Verso: Experience -->
-                <div class="page-back">
+                <!-- PÁGINA 2: Verso (Experience) -->
+                <div class="page-data">
                     <h2>Experience</h2>
                     <div class="timeline">
                         <div class="timeline-item">
                             <span class="date">2026 - Present</span>
                             <h4>Google Student Ambassador</h4>
-                            <p>Representing Google by promoting technological culture and innovation best practices.</p>
+                            <p>Representing Google by promoting technological culture.</p>
                         </div>
                         <div class="timeline-item">
                             <span class="date">Apr 2026 - Present</span>
                             <h4>Dev Intern (EAD) | UNIFOR</h4>
-                            <p>Maintenance and evolution of the Moodle platform prioritizing intuitive design.</p>
+                            <p>Maintenance and evolution of the Moodle platform.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="date">Aug 2026 - Present</span>
+                            <h4>Teacher Assistant | UNIFOR </h4>
+                            <p>Helping students with their learning in Web Development classes.</p>
                         </div>
                         <div class="timeline-item">
                             <span class="date">Aug 2025 - Present</span>
                             <h4>Scholar | PET-Saúde Digital</h4>
-                            <p>Developing technological solutions for the Brazilian Unified Health System (SUS).</p>
+                            <p>Developing solutions for the Unified Health System (SUS).</p>
                         </div>
                     </div>
-                    <div class="page-footer">
-                        <button class="prev-btn" onclick="turnPageBack('page1')">❮</button>
-                        <span>2</span>
-                    </div>
                 </div>
-            </div>
 
-            <!-- PÁGINA 2 (Fica por baixo da Página 1) -->
-            <div class="page-right" id="page2" style="z-index: 1;">
-                
-                <!-- Frente: Projects -->
-                <div class="page-front">
+                <!-- PÁGINA 3: Frente (Projects) -->
+                <div class="page-data">
                     <h2>Featured Projects</h2>
                     <div class="project-item">
                         <h4>NAF-IA: Gen AI Assistant</h4>
-                        <p>Virtual assistant with RAG architecture for immediate triage of taxpayers. Highly scalable and compliant with LGPD.</p>
+                        <p>Virtual assistant with RAG architecture for immediate triage of taxpayers. Compliant with LGPD.</p>
                         <span class="tag">Python</span> <span class="tag">RAG</span>
                     </div>
                     <div class="project-item">
                         <h4>Pricing System — NAF</h4>
-                        <p>Web platform automating retail price calculations for microentrepreneurs. Approved for real-world operational use.</p>
+                        <p>Web platform automating retail price calculations for microentrepreneurs. Approved for real-world use.</p>
                         <span class="tag">Node.js</span> <span class="tag">MongoDB</span>
-                    </div>
-                    <div class="page-footer">
-                        <span>3</span>
-                        <button class="next-btn" onclick="turnPage('page2')">❯</button>
                     </div>
                 </div>
 
-                <!-- Verso: Skills & Awards -->
-                <div class="page-back">
+                <!-- PÁGINA 4: Verso (Skills & Awards) -->
+                <div class="page-data">
                     <h2>Skills & Awards</h2>
                     <div class="skills-section">
                         <h4>Technical Skills</h4>
-                        <p><strong>Languages:</strong> Java, JavaScript, Node.js, Python, C/C++</p>
+                        <p><strong>Languages:</strong> Java, JS, Node.js, Python, C/C++</p>
                         <p><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB</p>
-                        <p><strong>Tools:</strong> Generative AI, Git/GitHub, Godot, Scrum</p>
+                        <p><strong>Tools:</strong> Gen AI, Git/GitHub, Godot, Scrum</p>
                     </div>
-                    <div class="skills-section" style="margin-top: 20px;">
+                    <div class="skills-section" style="margin-top: 15px;">
                         <h4>Honors & Awards</h4>
                         <ul class="awards-list">
-                            <li>Harvard Model United Nations 2023</li>
                             <li>Santander Coders 2024: Back-End</li>
-                            <li>Ceará Científico 2022: Honorable Mention</li>
+                            <li>Harvard Model United Nations 2023</li>
+                            <li>Ceará Científico 2022: Hon. Mention</li>
                             <li>1st Place Oratory Contest: AHO</li>
                         </ul>
-                    </div>
-                    <div class="page-footer">
-                        <button class="prev-btn" onclick="turnPageBack('page2')">❮</button>
-                        <span>4</span>
                     </div>
                 </div>
             </div>
