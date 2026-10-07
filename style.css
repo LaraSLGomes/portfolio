@@ -14,6 +14,42 @@ body {
     overflow: hidden;
 }
 
+.language-switch {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 100;
+    display: flex;
+    gap: 4px;
+    padding: 4px;
+    background: #ffffff;
+    border: 1px solid #dbe3e8;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.language-option {
+    min-width: 48px;
+    padding: 8px 10px;
+    border: 0;
+    border-radius: 5px;
+    background: transparent;
+    color: #475569;
+    font-size: 0.75rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.language-option.is-active {
+    background: #037f66;
+    color: #ffffff;
+}
+
+.language-option:focus-visible {
+    outline: 2px solid #0f172a;
+    outline-offset: 2px;
+}
+
 .book-container {
     perspective: 1500px; 
 }
@@ -97,7 +133,7 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s;
-    display: inline-block; /* Para garantir margens perfeitas */
+    display: inline-block;
 }
 
 .btn:hover { background: #026c57; }
@@ -232,26 +268,34 @@ h2 {
     body {
         height: auto;
         min-height: 100vh;
-        overflow-y: auto; /* Desbloqueia o scroll vertical no mobile */
-        padding: 20px 15px;
-        align-items: flex-start; /* Evita cortar o topo da tela */
+        overflow-y: auto; 
+        padding: 68px 15px 20px;
+        align-items: flex-start; 
+    }
+    
+    /* Força o botão de idioma a aparecer centrado e acima de tudo no telemóvel */
+    .language-switch {
+        top: 15px;
+        right: 50%;
+        transform: translateX(50%);
+        z-index: 9999;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     }
 
     .book-container {
         width: 100%;
-        perspective: none; /* Desliga o 3D para leitura limpa */
+        perspective: none; 
     }
 
     .book {
         width: 100%;
         height: auto;
-        flex-direction: column; /* Força 1 única coluna */
+        flex-direction: column; 
         background: transparent;
         box-shadow: none;
         padding: 0;
     }
 
-    /* O Perfil vira um "card" centralizado no topo */
     .page-left {
         width: 100%;
         border-radius: 12px;
@@ -261,7 +305,6 @@ h2 {
         box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
 
-    /* LINKS SOCIAIS (Mobile): Empilhados e maiores para virarem botões */
     .social-icons {
         flex-direction: column;
         width: 100%;
@@ -272,7 +315,7 @@ h2 {
         display: block;
         width: 100%;
         padding: 14px;
-        background: #f1f5f9; /* Fundo suave para parecer botão */
+        background: #f1f5f9; 
         border-radius: 8px;
         text-align: center;
         font-size: 1rem;
@@ -282,15 +325,13 @@ h2 {
         width: 100%;
     }
 
-    /* RESUME (Mobile): Touch target (área de clique) ampliado e ocupando 100% */
     .btn {
-        padding: 18px 20px; /* Mais alto para facilitar o toque */
+        padding: 18px 20px; 
         width: 100%;
         text-align: center;
         font-size: 1.1rem;
     }
 
-    /* PÁGINAS DO LIVRO (Mobile): Desliga as animações e transforma em cards empilhados */
     #pages {
         display: flex;
         flex-direction: column;
@@ -311,15 +352,29 @@ h2 {
         position: relative;
         width: 100%;
         height: auto;
-        transform: none !important; /* Desfaz o giro do "verso" */
+        transform: none !important; 
         border-radius: 12px;
         box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         padding: 30px 20px;
-        margin-bottom: 20px; /* Cria espaço entre uma página e outra */
+        margin-bottom: 20px; 
     }
 
-    /* Esconde os botões de virar página (Next/Prev) no celular */
     .page-footer {
         display: none !important; 
     }
+}
+
+/* ========================================================
+   SISTEMA DE TRADUÇÃO (TOGGLE)
+   ======================================================== */
+.pt {
+    display: none !important;
+}
+
+body.lang-pt .en {
+    display: none !important;
+}
+
+body.lang-pt .pt {
+    display: inline !important; 
 }

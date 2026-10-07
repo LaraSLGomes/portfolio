@@ -80,3 +80,42 @@ function turnPageBack(spreadId, spreadIndex, totalSpreads) {
 
 // Constrói o livro ao carregar
 buildPages();
+
+
+// ========================================================
+// SISTEMA DE TRADUÇÃO
+// ========================================================
+const languageOptions = document.querySelectorAll('.language-option');
+
+function setLanguage(lang) {
+    // Adiciona ou remove a classe 'lang-pt' do body
+    if (lang === 'pt-BR') {
+        document.body.classList.add('lang-pt');
+        document.documentElement.lang = 'pt-BR';
+    } else {
+        document.body.classList.remove('lang-pt');
+        document.documentElement.lang = 'en';
+    }
+
+    // Atualiza o visual dos botões
+    languageOptions.forEach(btn => {
+        if (btn.dataset.language === lang) {
+            btn.classList.add('is-active');
+            btn.setAttribute('aria-pressed', 'true');
+        } else {
+            btn.classList.remove('is-active');
+            btn.setAttribute('aria-pressed', 'false');
+        }
+    });
+
+    // Salva a escolha no navegador
+    localStorage.setItem('portfolio-language', lang);
+}
+
+// Cria os eventos de clique para os botões
+languageOptions.forEach(btn => {
+    btn.addEventListener('click', () => setLanguage(btn.dataset.language));
+});
+
+// Carrega o idioma salvo ou o padrão (Inglês)
+setLanguage(localStorage.getItem('portfolio-language') || 'en');

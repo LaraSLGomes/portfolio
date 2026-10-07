@@ -9,6 +9,12 @@
 </head>
 <body>
 
+    <!-- BOTÕES DE IDIOMA -->
+    <div class="language-switch" role="group" aria-label="Choose language">
+        <button type="button" class="language-option is-active" data-language="en">EN</button>
+        <button type="button" class="language-option" data-language="pt-BR">PT-BR</button>
+    </div>
+
     <div class="book-container">
         <div class="book">
             
@@ -18,10 +24,15 @@
                     <!-- Substitua o src pela sua foto real -->
                     <img src="fotolara.jpeg" alt="Lara Stephanny" class="profile-img">
                     <h1>Lara Stephanny</h1>
-                    <h3>Full Stack Dev & Researcher</h3>
+                    
+                    <h3>
+                        <span class="en">Full Stack Dev & Researcher</span>
+                        <span class="pt">Desenvolvedora Full Stack e Pesquisadora</span>
+                    </h3>
                     
                     <p class="bio">
-                        Full Stack Developer and Researcher with a proven track record of building scalable web solutions and conducting high-impact projects. 
+                        <span class="en">Full Stack Developer and Researcher with a proven track record of building scalable web solutions and conducting high-impact projects.</span>
+                        <span class="pt">Desenvolvedora full stack e pesquisadora, com experiência comprovada na criação de soluções web escaláveis e na condução de projetos de grande impacto.</span>
                     </p>
                     
                     <div class="social-icons">
@@ -31,7 +42,10 @@
                     </div>
                     
                     <div class="buttons">
-                        <a href="resume.pdf" target="_blank" class="btn">Resume</a>
+                        <a href="resume.pdf" target="_blank" class="btn">
+                            <span class="en">Resume</span>
+                            <span class="pt">Currículo</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -44,77 +58,161 @@
                 
                 <!-- PÁGINA 1: Frente (About) -->
                 <div class="page-data">
-                    <h2>About Me</h2>
-                    <p class="text-block"> Passionate about bridging the gap between technical execution and project strategy. While my foundation is rooted in fullstack development, my ultimate goal is to design scalable solutions and guide products from conception to delivery.</p>
-                    <p class="text-block"> Currently, I optimize the Moodle ecosystem as a Dev Intern at UNIFOR's Distance Education department, and I engineer health-tech tools at PET-Saúde Digital to accelerate the digital transformation of the Brazilian public health system (SUS).</p>
-                    <p class="text-block"> Beyond writing code, my role as a 2026 Google Student Ambassador allows me to connect with the community, aligning technical excellence with initiatives that truly matter.</p>
+                    <h2>
+                        <span class="en">About Me</span>
+                        <span class="pt">Sobre mim</span>
+                    </h2>
+                    <p class="text-block">
+                        <span class="en">Passionate about bridging the gap between technical execution and project strategy. While my foundation is rooted in fullstack development, my ultimate goal is to design scalable solutions and guide products from conception to delivery.</span>
+                        <span class="pt">Sou apaixonada por conectar a execução técnica à estratégia de projetos. Minha experiência é em desenvolvimento full stack, e meu objetivo é criar soluções escaláveis e acompanhar produtos da concepção à entrega.</span>
+                    </p>
+                    <p class="text-block">
+                        <span class="en">Currently, I optimize the Moodle ecosystem as a Dev Intern at UNIFOR's Distance Education department, and I engineer health-tech tools at PET-Saúde Digital to accelerate the digital transformation of the Brazilian public health system (SUS).</span>
+                        <span class="pt">Atualmente, aprimoro o ecossistema Moodle como estagiária de desenvolvimento no setor de Educação a Distância da UNIFOR e desenvolvo ferramentas de tecnologia em saúde no PET-Saúde Digital, contribuindo para a transformação digital do Sistema Único de Saúde (SUS).</span>
+                    </p>
+                    <p class="text-block">
+                        <span class="en">Beyond writing code, my role as a 2026 Google Student Ambassador allows me to connect with the community, aligning technical excellence with initiatives that truly matter.</span>
+                        <span class="pt">Além de programar, como Embaixadora Estudantil do Google em 2026, conecto-me à comunidade e alinho excelência técnica a iniciativas que fazem a diferença.</span>
+                    </p>
                 </div>
 
                 <!-- PÁGINA 2: Verso (Experience) -->
                 <div class="page-data">
-                    <h2>Experience</h2>
+                    <h2>
+                        <span class="en">Experience</span>
+                        <span class="pt">Experiência</span>
+                    </h2>
                     <div class="timeline">
                         <div class="timeline-item">
-                            <span class="date">2026 - Present</span>
-                            <h4>Google Student Ambassador</h4>
-                            <p>Representing Google by promoting technological culture.</p>
+                            <span class="date">
+                                <span class="en">2026 - Present</span>
+                                <span class="pt">2026 - Atualmente</span>
+                            </span>
+                            <h4>
+                                <span class="en">Google Student Ambassador</span>
+                                <span class="pt">Embaixadora Estudantil do Google</span>
+                            </h4>
+                            <p>
+                                <span class="en">Representing Google by promoting technological culture.</span>
+                                <span class="pt">Represento o Google e promovo a cultura tecnológica.</span>
+                            </p>
                         </div>
                         <div class="timeline-item">
-                            <span class="date">Apr 2026 - Present</span>
-                            <h4>Dev Intern (EAD) | UNIFOR</h4>
-                            <p>Maintenance and evolution of the Moodle platform.</p>
+                            <span class="date">
+                                <span class="en">Apr 2026 - Present</span>
+                                <span class="pt">Abr 2026 - Atualmente</span>
+                            </span>
+                            <h4>
+                                <span class="en">Dev Intern (EAD) | UNIFOR</span>
+                                <span class="pt">Estagiária de Desenvolvimento (EAD) | UNIFOR</span>
+                            </h4>
+                            <p>
+                                <span class="en">Maintenance and evolution of the Moodle platform.</span>
+                                <span class="pt">Manutenção e evolução da plataforma Moodle.</span>
+                            </p>
                         </div>
                         <div class="timeline-item">
-                            <span class="date">Aug 2026 - Present</span>
-                            <h4>Teacher Assistant | UNIFOR </h4>
-                            <p>Helping students with their learning in Web Development classes.</p>
+                            <span class="date">
+                                <span class="en">Aug 2026 - Present</span>
+                                <span class="pt">Ago 2026 - Atualmente</span>
+                            </span>
+                            <h4>
+                                <span class="en">Teacher Assistant | UNIFOR</span>
+                                <span class="pt">Monitora de Ensino | UNIFOR</span>
+                            </h4>
+                            <p>
+                                <span class="en">Helping students with their learning in Web Development classes.</span>
+                                <span class="pt">Apoio estudantes no aprendizado durante as aulas de Desenvolvimento Web.</span>
+                            </p>
                         </div>
                         <div class="timeline-item">
-                            <span class="date">Aug 2025 - Present</span>
-                            <h4>Technology Scholar | PET-Saúde Digital</h4>
-                            <p>Developing solutions for the Unified Health System (SUS).</p>
+                            <span class="date">
+                                <span class="en">Aug 2025 - Present</span>
+                                <span class="pt">Ago 2025 - Atualmente</span>
+                            </span>
+                            <h4>
+                                <span class="en">Technology Scholar | PET-Saúde Digital</span>
+                                <span class="pt">Bolsista de Tecnologia | PET-Saúde Digital</span>
+                            </h4>
+                            <p>
+                                <span class="en">Developing solutions for the Unified Health System (SUS).</span>
+                                <span class="pt">Desenvolvimento de soluções para o Sistema Único de Saúde (SUS).</span>
+                            </p>
                         </div>
                     </div>
                 </div>
 
                 <!-- PÁGINA 3: Frente (Projects) -->
                 <div class="page-data">
-                    <h2>Main Projects</h2>
+                    <h2>
+                        <span class="en">Main Projects</span>
+                        <span class="pt">Principais projetos</span>
+                    </h2>
                     <div class="project-item">
                         <h4>NAF-IA</h4>
-                        <p>Virtual assistant utilizing RAG architecture and LLMs for the automated, accurate triage of taxpayers.</p>
+                        <p>
+                            <span class="en">Virtual assistant utilizing RAG architecture and LLMs for the automated, accurate triage of taxpayers.</span>
+                            <span class="pt">Assistente virtual que utiliza arquitetura RAG e LLMs para realizar a triagem automatizada e precisa de contribuintes.</span>
+                        </p>
                         <span class="tag">Python</span> <span class="tag">RAG</span> <span class="tag">LLM</span> <span class="tag">Data Privacy</span>
                     </div>
     
                     <div class="project-item">
                         <h4>Pricing System</h4>
-                        <p>Web platform engineered to automate complex retail price calculations and financial planning for micro-entrepreneurs (MEIs). Successfully validated and approved for real-world community application.</p>
+                        <p>
+                            <span class="en">Web platform engineered to automate complex retail price calculations and financial planning for micro-entrepreneurs (MEIs). Successfully validated and approved for real-world community application.</span>
+                            <span class="pt">Plataforma web criada para automatizar cálculos complexos de preços no varejo e o planejamento financeiro de microempreendedores (MEIs). Validada e aprovada para aplicação em uma comunidade real.</span>
+                        </p>
                         <span class="tag">Node.js</span> <span class="tag">JavaScript</span> <span class="tag">MongoDB</span>
                     </div>
 
                     <div class="project-item">
                         <h4>GamerBoxd: Review Microservice</h4>
-                        <p>Engineered a cloud-agnostic Node.js microservice for managing user reviews in a distributed platform.</p>
+                        <p>
+                            <span class="en">Engineered a cloud-agnostic Node.js microservice for managing user reviews in a distributed platform.</span>
+                            <span class="pt">Microsserviço em Node.js, independente de provedores de nuvem, para gerenciar avaliações de usuários em uma plataforma distribuída.</span>
+                        </p>
                         <span class="tag">Node.js</span> <span class="tag">Express</span> <span class="tag">PostgreSQL</span> <span class="tag">Microservices</span>
                     </div>
                 </div>
 
                 <!-- PÁGINA 4: Verso (Skills & Awards) -->
                 <div class="page-data">
-                    <h2>Skills & Awards</h2>
+                    <h2>
+                        <span class="en">Skills & Awards</span>
+                        <span class="pt">Competências e prêmios</span>
+                    </h2>
                     <div class="skills-section">
-                        <h4>Technical Skills</h4>
-                        <p><strong>Languages:</strong> Java, JavaScript, Node.js, Python, C/C++</p>
-                        <p><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB</p>
-                        <p><strong>Tools:</strong> Gen AI, Git/GitHub, Godot, Scrum</p>
+                        <h4>
+                            <span class="en">Technical Skills</span>
+                            <span class="pt">Competências técnicas</span>
+                        </h4>
+                        <p>
+                            <strong><span class="en">Languages:</span><span class="pt">Linguagens:</span></strong> Java, JavaScript, Node.js, Python, C/C++
+                        </p>
+                        <p>
+                            <strong><span class="en">Databases:</span><span class="pt">Bancos de dados:</span></strong> PostgreSQL, MySQL, MongoDB
+                        </p>
+                        <p>
+                            <strong><span class="en">Tools:</span><span class="pt">Ferramentas:</span></strong> Gen AI, Git/GitHub, Godot, Scrum
+                        </p>
                     </div>
                     <div class="skills-section" style="margin-top: 15px;">
-                        <h4>Honors & Awards</h4>
+                        <h4>
+                            <span class="en">Honors & Awards</span>
+                            <span class="pt">Reconhecimentos e prêmios</span>
+                        </h4>
                         <ul class="awards-list">
                             <li>Santander Coders 2024: Back-End</li>
                             <li>Harvard Model United Nations 2023</li>
-                            <li>Ceará Científico 2022: Hon. Mention</li>
-                            <li>1st Place Oratory Contest: AHO</li>
+                            <li>
+                                <span class="en">Ceará Científico 2022: Hon. Mention</span>
+                                <span class="pt">Ceará Científico 2022: Menção honrosa</span>
+                            </li>
+                            <li>
+                                <span class="en">1st Place Oratory Contest: AHO</span>
+                                <span class="pt">1º lugar no Concurso de Oratória: AHO</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
