@@ -8,8 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- BOTÕES DE IDIOMA -->
     <div class="language-switch" role="group" aria-label="Choose language">
         <button type="button" class="language-option is-active" data-language="en">EN</button>
         <button type="button" class="language-option" data-language="pt-BR">PT-BR</button>
@@ -17,30 +15,27 @@
 
     <div class="book-container">
         <div class="book">
-            
-            <!-- LADO ESQUERDO FIXO (Seu Perfil) -->
             <div class="page-left">
                 <div class="profile-section">
-                    <!-- Substitua o src pela sua foto real -->
                     <img src="fotolara.jpeg" alt="Lara Stephanny" class="profile-img">
                     <h1>Lara Stephanny</h1>
-                    
+
                     <h3>
                         <span class="en">Full Stack Dev & Researcher</span>
                         <span class="pt">Desenvolvedora Full Stack e Pesquisadora</span>
                     </h3>
-                    
+
                     <p class="bio">
                         <span class="en">Full Stack Developer and Researcher with a proven track record of building scalable web solutions and conducting high-impact projects.</span>
                         <span class="pt">Desenvolvedora full stack e pesquisadora, com experiência comprovada na criação de soluções web escaláveis e na condução de projetos de grande impacto.</span>
                     </p>
-                    
+
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/lara-stephanny-0317a82b5/" target="_blank">LinkedIn</a>
                         <a href="https://github.com/LaraSLGomes" target="_blank">GitHub</a>
                         <a href="mailto:larastephanny05@gmail.com" target="_blank">E-mail</a>
                     </div>
-                    
+
                     <div class="buttons">
                         <a href="resume.pdf" target="_blank" class="btn">
                             <span class="en">Resume</span>
@@ -50,13 +45,9 @@
                 </div>
             </div>
 
-            <!-- LADO DIREITO (Onde o JS vai injetar as páginas que viram) -->
             <div id="pages" aria-live="polite"></div>
 
-            <!-- O CONTEÚDO BRUTO (Fica oculto e o JS vai ler para montar o livro) -->
             <div id="content-source" style="display: none;">
-                
-                <!-- PÁGINA 1: Frente (About) -->
                 <div class="page-data">
                     <h2>
                         <span class="en">About Me</span>
@@ -76,7 +67,6 @@
                     </p>
                 </div>
 
-                <!-- PÁGINA 2: Verso (Experience) -->
                 <div class="page-data">
                     <h2>
                         <span class="en">Experience</span>
@@ -142,7 +132,6 @@
                     </div>
                 </div>
 
-                <!-- PÁGINA 3: Frente (Projects) -->
                 <div class="page-data">
                     <h2>
                         <span class="en">Main Projects</span>
@@ -156,7 +145,7 @@
                         </p>
                         <span class="tag">Python</span> <span class="tag">RAG</span> <span class="tag">LLM</span> <span class="tag">Data Privacy</span>
                     </div>
-    
+
                     <div class="project-item">
                         <h4>Pricing System</h4>
                         <p>
@@ -176,7 +165,6 @@
                     </div>
                 </div>
 
-                <!-- PÁGINA 4: Verso (Skills & Awards) -->
                 <div class="page-data">
                     <h2>
                         <span class="en">Skills & Awards</span>
@@ -217,7 +205,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
